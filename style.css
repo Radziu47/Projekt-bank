@@ -25,6 +25,8 @@ body {
 
 #container2 {
   margin-left: 330px;
+  position: relative;
+  bottom: -20px;
   width: 30%;
   display: grid;
   grid-template-areas: "Zal Zal Zal Zal HelpLog HelpLog" "login login login login login login" "Helped Helped footer footer Send Send";
@@ -50,14 +52,21 @@ body {
 
 #wyslij {
   grid-area: Send;
+  width: 200px;
+  background-color: #003574;
+  border: 0px;
+  border-radius: 10% 10%;
+  color: #F2F2F2;
 }
 
 #money {
-  background-color: wheat;
+  position: relative;
+  top: -180px;
+  float: right;
   margin-right: 330px;
   width: 30%;
   display: grid;
-  grid-template-areas: "moneyImg wez" "moneyImg nad" "moneyImg manibutt";
+  grid-template-areas: "moneyImg wez wez wez" "moneyImg nad nad nad" "moneyImg monibutt monibutt monibutt";
   gap: 10px;
   padding: 10px;
 }
@@ -72,8 +81,17 @@ body {
 
 #NaDowol {
   grid-area: nad;
+  position: relative;
+  top: -120px;
 }
 
 #MoneyButt {
   grid-area: monibutt;
+  width: 200px;
+  position: relative;
+  top: -120px;
+  background-color: #DB912C;
+  border: 0px;
+  border-radius: 10% 10%;
+  color: #F2F2F2;
 }/*# sourceMappingURL=style.css.map */

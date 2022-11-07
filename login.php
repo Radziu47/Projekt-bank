@@ -33,13 +33,11 @@ session_start();
                 <input type="submit" value="Wyslij" id="wyslij">
             </form>
         </div>
-        <div>
         <div id="money">
-                <img src="graphic\LoginGraphic\pieniądze.png" alt="moni" id="money">
+                <img src="graphic\LoginGraphic\pieniądze.png" alt="moni" id="moni">
                 <h1 id="wezOnline">Weź online pierwszą pożyczkę. RRSO 9,82%</h1>
                 <p id="NaDowol">Na dowolne wydatki</p>
                 <button id="MoneyButt">Sprawdź Propozycje</button>
-        </div>
         </div>
     </section>
 </body>

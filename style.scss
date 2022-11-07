@@ -1,13 +1,19 @@
 $margin : 300px;
+$top : 20px;
 
-
+//colors
+$MoneyButtColor: #DB912C;
+$LoginButtColor: #003574;
+$TextColor:#F2F2F2;
 *, *::after, *::before {
     box-sizing: border-box;
+    
 }
 
 body{
     padding: 0%;
     margin: 0%;
+    //background-color: rebeccapurple;
 }
 
 .header{
@@ -29,6 +35,8 @@ body{
 
 #container2{
     margin-left: ($margin * 2) - ($margin * 0.9);
+    position: relative;
+    bottom: -$top;
     width: 30%;
     display: grid;
     grid-template-areas:
@@ -42,22 +50,24 @@ body{
 #noAcc { grid-area: HelpLog; }
 #login { grid-area: login; }
 #help { grid-area: Helped; }
-#wyslij { grid-area: Send; }
+#wyslij { grid-area: Send; width: $top*10; background-color:$LoginButtColor; border: 0px; border-radius: 10% 10%; color: $TextColor;}
 
 #money{
-    background-color: wheat;
+    position: relative;
+    top: -($top*9);
+    float: right;
     margin-right: ($margin * 2) - ($margin * 0.9);
     width: 30%;
     display: grid;
     grid-template-areas:
-        'moneyImg wez'
-        'moneyImg nad'
-        'moneyImg manibutt';
+        'moneyImg wez wez wez'
+        'moneyImg nad nad nad'
+        'moneyImg monibutt monibutt monibutt';
     gap: 10px;
     padding: 10px;
 }
 
 #money { grid-area: moneyImg; }
 #wezOnline { grid-area: wez; }
-#NaDowol { grid-area: nad; }
-#MoneyButt { grid-area: monibutt; }
+#NaDowol { grid-area: nad; position: relative; top: -($top*6);}
+#MoneyButt { grid-area: monibutt; width: $top*10; position: relative; top: -($top*6); background-color:$MoneyButtColor; border: 0px; border-radius: 10% 10%; color: $TextColor;}
