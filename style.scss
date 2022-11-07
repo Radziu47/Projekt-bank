@@ -1,0 +1,63 @@
+$margin : 300px;
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#logo{
+    width: 56px;
+    height: 48px;
+    margin-left: $margin;
+}
+
+#lang{
+    margin-right: $margin;
+}
+
+#container2{
+    margin-left: ($margin * 2) - ($margin * 0.9);
+    width: 30%;
+    display: grid;
+    grid-template-areas:
+        'Zal Zal Zal Zal HelpLog HelpLog'
+        'login login login login login login'
+        'Helped Helped footer footer Send Send';
+    gap: 10px;
+    padding: 10px;
+}
+#zal { grid-area: Zal; }
+#noAcc { grid-area: HelpLog; }
+#login { grid-area: login; }
+#help { grid-area: Helped; }
+#wyslij { grid-area: Send; }
+
+#money{
+    background-color: wheat;
+    margin-right: ($margin * 2) - ($margin * 0.9);
+    width: 30%;
+    display: grid;
+    grid-template-areas:
+        'moneyImg wez'
+        'moneyImg nad'
+        'moneyImg manibutt';
+    gap: 10px;
+    padding: 10px;
+}
+
+#money { grid-area: moneyImg; }
+#wezOnline { grid-area: wez; }
+#NaDowol { grid-area: nad; }
+#MoneyButt { grid-area: monibutt; }
